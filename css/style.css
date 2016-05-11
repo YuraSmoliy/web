@@ -377,6 +377,9 @@ input:hover {
 textarea:hover {
 	background-color: yellow;
 }
+select:hover {
+	background-color: yellow;
+}
 #body form #send:hover {
 	background: #fff;
 	color: #252525;
