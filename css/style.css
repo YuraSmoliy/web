@@ -16,6 +16,15 @@
 		 url('../fonts/leckerlione/leckerlione-regular-webfont.ttf') format('truetype'),
 		 url('../fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular') format('svg');
 }
+.gender{
+	background-color: white;
+	display: inline-block;
+}
+.sex{
+	background-color: white;
+     display: inline-block;
+}
+label.gender{width: 30%;}
 
 body {
 	background:#CCC ;
@@ -60,7 +69,9 @@ p a:hover {
 }
 #header ul {
 	margin: 0;
-	padding: 56px 0 0;
+	padding: 63px 0 0;
+	
+
 }
 #header ul li {
 	display: inline;
@@ -305,37 +316,66 @@ p a:hover {
 	margin: 0;
 	padding: 33px 0 0;
 }
-#body form {
-	margin: 0 auto;
-	padding: 24px 0 0;
-	width: 620px;
-}
-#body form input, #body form textarea {
-	border: 2px solid #252525;
-	color: #252525;
-	font-family: Arial, Helvetica, sans-serif;
+form{
+	background: #EAE5E5;
+	display: block; 
+	width:60%;
+	margin-top: 30px; 
+	text-align: left;
+	align-self: center;
+	margin-left: 20%;
 	font-size: 15px;
-	font-weight: normal;
-	margin: 0 0 37px;
-	padding: 20px 10px;
-	text-align: center;
-	text-transform: uppercase;
-	width: 596px;
+	font-family: Georgia;
 }
-#body form textarea {
-	height: 175px;
-	overflow: auto;
-	resize: none;
+fieldset{
+	background: #EAE5E5;
 }
-#body form #send {
-	background: #252525;
-	color: #fff;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
+.div{
+	width: 100%; 
+	padding-top: 20px;
+}
+.div3{
+	width: 100%; 
+	padding-top: 20px;
+	
+}
+textarea{
+	width: 70%;
+}
+.submit{
+	margin-top: 20px;
+}
+.div2{
 	display: inline-block;
-	padding: 20px 28px;
-	width: auto;
+	width: 55%;
+}
+label{
+	width: 25%;
+	display: inline-block;
+}
+input{
+	width: 70%;
+	display: inline-block;
+}
+.l1{
+	width: 40%;
+	display: inline-block;
+}
+.l{
+	width:15%;
+	display: inline-block;
+	text-align: right;
+}
+.radio{
+	width: 12%;
+	display: inline-block;
+	text-align: left;
+}
+input:hover {
+	background-color: yellow;
+}
+textarea:hover {
+	background-color: yellow;
 }
 #body form #send:hover {
 	background: #fff;

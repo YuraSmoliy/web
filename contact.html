@@ -30,14 +30,81 @@
 		</ul>
 	</div>
 	<div id="body">
-		<h1><span>ваші дані</span></h1>
-		<form action="contact.html">
-			<input type="text" name="fname" id="fname" value="name">
-			<input type="text" name="address" id="address" value="address">
-			<input type="text" name="email" id="email" value="email">
-			<input type="text" name="phone" id="phone" value="phone number">
-			<textarea name="message" id="message">message</textarea>
-			<input type="submit" name="send" id="send" value="send">
+		
+		<form action="contact.html" name="formContact" >
+			  <fieldset>
+			    <legend><h2>Ваші данні</h2></legend>
+				  <div class="div">
+					 <label>
+						 ім'я 
+					 </label>
+					 <input type="text" name="name" autofocus placeholder="Вася">
+					  <label for="security"> степінь захисту:</label> <keygen   class="submit" name="security">
+				  </div>
+
+				    <div class="div">
+						 <label>
+							 вік 
+						 </label>
+						 <input type="range" name="age" value="20" max="100" min="10" >
+						 
+					 </div>
+
+
+				   <div class="div"> 
+						<label class="l1" for="gender">
+							 стать
+						</label>
+						<div class="div2">
+							<label class="l">чоловіча</label><input type="radio" name="gender" checked value="male" class="radio">
+							<label class="l">жіноча</label><input type="radio" name="gender" value="female" class="radio">
+							<label class="l">інша</label><input type="radio" name="gender" value="other" class="radio">
+						</div>
+				   </div>
+				   <div class="div">  
+				 	  <label>
+							вкажіть ваше країну
+					  </label>
+					   <select name="country"> 
+
+					 	
+						   <option value="Ukraine">Україна</option>
+							 <option value="Poland">Польща</option>
+							 <option value="Russia">Росія</option>
+							 <option value="Germany">Німеччина</option>
+					   </select>
+						   
+				   <div class="div">  
+				 	  <label for="city">
+							вкажіть ваше місто
+					  </label>
+					   <input type="text" list="city" name="city" placeholder="Тернопіль"> 
+
+					 	<datalist id="city">
+							 <option value="Львів">
+							 <option value="Київ">
+							 <option value="Одеса">
+							 <option value="Харків">
+					 	</datalist>
+				 	</div>
+					<div class="div">	 
+							<label> 
+							введіть свій email
+							</label> 
+							<input type="email" name="email" placeholder="blabla@com.ua">
+					</div>
+			  	
+			  	    <div class="div3">	 
+							<label> 
+							введіть своє повідомлення
+							</label> 
+						<textarea name="text">
+							
+						</textarea>
+					</div>
+				  	<button class="submit" type="submit">надіслати</button>
+				  	
+				 </fieldset>
 		</form>
 	</div>
 	<div id="footer">
