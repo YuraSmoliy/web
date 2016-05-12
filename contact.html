@@ -31,82 +31,44 @@
 	</div>
 	<div id="body">
 		
-		<form action="contact.html" name="formContact" >
-			  <fieldset>
-			    <legend><h2>Ваші данні</h2></legend>
-				  <div class="div">
-					 <label>
-						 ім'я 
-					 </label>
-					 <input type="text" name="name" autofocus placeholder="Вася">
-					  <label for="security"> степінь захисту:</label> <keygen   class="submit" name="security">
-				  </div>
+	
+	<div id="login">
+		<h2><span class="fontawesome-lock"></span>Замовлення екскурсій</h2>
+		<form action="mySendMail.php" method="POST">
+			<fieldset>
+				<p><label for="email">ім'я</label></p>
+				<p><input type="text" id="name" name="name" value="ім'я" onBlur="if(this.value=='')this.value='ім'я" onFocus="if(this.value=='ім'я')this.value=''"></p>
+				
+				<p><label for="email">Email:</label></p>
+				<p><input type="email" name="email" id="email" value="email" onBlur="if(this.value=='')this.value='email'" onFocus="if(this.value=='email')this.value=''"></p>
 
-				    <div class="div">
-						 <label>
-							 вік 
-						 </label>
-						 <input type="range" name="age" value="20" max="100" min="10" >
-						 
-					 </div>
+				<p><label for="age">вік</label></p>
+				<p><input type="number" id="number" name="age" value="16" onBlur="if(this.value=='')this.value='вік'" onFocus="if(this.value=='вік')this.value=''"></p> 
+				  
+	       		<p><label for="age">дата</label></p>
+				<p><input type="date" id="date" name="date" value="дата" onBlur="if(this.value=='')this.value='дата'" onFocus="if(this.value=='вік')this.value=''"></p> 
+		       
+			      <p><label for="type">тип екскурсії</label></p>
+				<p>	<select name="type" >
+				<option value="1">оглядова</option>
+				<option value="2">личаківське кладовище</option>
+				<option value="3">Високий Замок</option>
+				
+					</select>
+				</p>
+					
 
-
-				   <div class="div"> 
-						<label class="l1" for="gender">
-							 стать
-						</label>
-						<div class="div2">
-							<label class="l">чоловіча</label><input type="radio" name="gender" checked value="male" class="radio">
-							<label class="l">жіноча</label><input type="radio" name="gender" value="female" class="radio">
-							<label class="l">інша</label><input type="radio" name="gender" value="other" class="radio">
-						</div>
-				   </div>
-				   <div class="div">  
-				 	  <label>
-							вкажіть ваше країну
-					  </label>
-					   <select name="country"> 
-
-					 	
-						   <option value="Ukraine">Україна</option>
-							 <option value="Poland">Польща</option>
-							 <option value="Russia">Росія</option>
-							 <option value="Germany">Німеччина</option>
-					   </select>
-						   
-				   <div class="div">  
-				 	  <label for="city">
-							вкажіть ваше місто
-					  </label>
-					   <input type="text" list="city" name="city" placeholder="Тернопіль"> 
-
-					 	<datalist id="city">
-							<option value="Львів"></option>
-							 <option value="Київ"></option>
-							 <option value="Одеса"></option>
-							 <option value="Харків"></option>
-					 	</datalist>
-				 	</div>
-					<div class="div">	 
-							<label> 
-							введіть свій email
-							</label> 
-							<input type="email" name="email" placeholder="blabla@com.ua">
-					</div>
-			  	
-			  	    <div class="div3">	 
-							<label> 
-							введіть своє повідомлення
-							</label> 
-						<textarea name="text">
-							
-						</textarea>
-					</div>
-				  	<button class="submit" type="submit">надіслати</button>
-				  	
-				 </fieldset>
+			    <p><label for="msg">повідомлення</label></p>
+				<p>	<textarea name="msg"></textarea></p>
+				
+				
+				
+				<p><input type="submit" value="відправити"></p>
+			</fieldset>
 		</form>
 	</div>
+	</div>
+	
 	<div id="footer">
 		<div>
 			<p>2016 by Yura.</p>
