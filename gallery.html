@@ -1,88 +1,107 @@
-<!doctype html>
-<!-- Website Template by freewebsitetemplates.com -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My first website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	<script src="gallery.js" defer></script>
 	
 </head>
-<body>
-
-	<div id="header">
-		<a href="index.html" class="logo">
-			<img src="images/logo2.png" alt="">
-		</a>
-		<ul id="navigation">
-			<li>
-				<a href="index.html">головна сторінка</a>
-			</li>
-			
-			<li class="selected">
-				<a href="gallery.html">галерея</a>
-			</li>
-			
-			<li>
-				<a href="contact.html">контакти</a>
-			</li>
-		</ul>
+<body onload="getJSON()">
+ 
+  <header>
+	<div class="logo">
+		<img src="xiaomi.png">
 	</div>
-	<div id="body">
-		<h1><span>галерея</span></h1>
-		<ul class="gallery">
-			<li>
-				<a href="gallery-single-post1.html">
-					<img src="images/11.jpg" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="gallery-single-post2.html">
-					<img src="images/21.jpg" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="gallery-single-post3.html">
-					<img src="images/31.jpg" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="gallery-single-post4.html">
-					<img src="images/41.jpg" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="gallery-single-post5.html">
-					<img src="images/51.png" alt="">
-				</a>
-			</li>
-			<li>
-				<a href="gallery-single-post6.html">
-					<img src="images/61.jpg" alt="">
-				</a>
-			</li>
-	
-		</ul>
+	<div>
+		<ul class="navItem">
+			<li><a href="index.html">news</a></li>
+			<li><a href="gallery.html">gallery</a></li>
+			<li><a href="contact.html">contact</a></li>
+			<li id="logIn" onclick="logIn()">log in?</li>
+			<li id="hello"></li>
+		
+   		</ul>
 	</div>
-	<div id="footer">
-		<div>
-			<p>2016 by Yura.</p>
-			<ul>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
-				</li>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
-				</li>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
-				</li>
-				<li>
-					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
-				</li>
-			</ul>
+	<form id="logInForm" action="#">
+		   
+   			<input class="logInfild" id="userName" type="text" placeholder="name" autocomplete="on" autofocus >
+   			<input class="logInfild" id="password" type="password" placeholder="password">
+   			<button class="logInfild" onclick="setUserCookie()">Log in</button>
+   	</form>
+  </header>
+  
+	<article>
+	   <div id="gallery">
 		</div>
+	<div class="main">
+	<div id="conteiner1" onmouseenter="mouseEnter('conteiner1')" onmouseleave="mouseLeave('conteiner1')">
+		<p>ADD NEW PRODUCTS IN YOUR PROGRAM</p>
+		<input type="text" name="name" id="name" placeholder="Product name" onchange="checName()">
+        <input type="text" name="cost" id="cost" placeholder="Product prise" onchange="checPrise()">
+		<input type="text" name="picture" id="picture" placeholder="Product picture" onchange="checPicture()" onfocus="addSelect()">
+        <textarea id="key" placeholder="your text"></textarea>
+        <button class="add" onclick="add()">ADD NEW PRODUCT</button>
+        <button class="add" onclick="showAll(); document.getElementById('page').innerHTML='1'; return false;">SHOW ALL</button>
 	</div>
+	
+	<div  id="conteiner2" onmouseenter="mouseEnter('conteiner2')" onmouseleave="mouseLeave('conteiner2')">
+		<section>
+			<img class="image" id="pictureS1">
+			<div class="pole"><p id="nameS1">Name</p></div>
+			<div class="pole"><p id="costS1">Cost</p></div>
+			<div class="pole"><p id="textS1">Describe</p></div>
+            <div class="pole"> <button class="buttonContent2" onclick="removeMy('nameS1')">&#10006</button> <button class="buttonContent2" onclick="updateProduct('nameS1')">&#10000</button></div>
+		</section>
+		
+		<section>
+			<img  class="image" id="pictureS2">
+			<div class="pole"><p id="nameS2">Name</p></div>
+			<div class="pole"><p id="costS2">Cost</p></div>
+			<div class="pole"><p id="textS2">Describe</p></div>
+			<div class="pole"> <button class="buttonContent2" onclick="removeMy('nameS2')">&#10006</button><button class="buttonContent2" onclick="updateProduct('nameS2')">&#10000</button></div>
+		</section>
+		
+		<section>
+			<img class="image" id="pictureS3">
+			<div class="pole"><p id="nameS3">Name</p></div>
+			<div class="pole"><p id="costS3">Cost</p></div>
+			<div class="pole"><p id="textS3">Describe</p></div>
+			<div class="pole"> <button class="buttonContent2" onclick="removeMy('nameS3')">&#10006</button><button class="buttonContent2" onclick="updateProduct('nameS3')">&#10000</button></div>
+		</section>
+		
+		<section>
+			<img class="image" id="pictureS4">
+			<div class="pole"><p id="nameS4">Name</p></div>
+			<div class="pole"><p id="costS4">Cost</p></div>
+		    <div class="pole"><p id="textS4">Describe</p></div>
+		    <div class="pole"> 
+		    <button class="buttonContent2" onclick="removeMy('nameS4')">&#10006</button><button class="buttonContent2" onclick="updateProduct('nameS4')">&#10000</button></div>
+		</section>
+		<button class="previos" onclick="previos()">&#8592 previos</button>
+		<p class="page" id="page" onclick="update()">1</p>
+		<button class="next" onclick="next()">next &#8594</button>
+		
+	</div>
+	
+ </div>
+    
+    <div> 
+    
+    </div>
+	</article>
+
+    <footer>
+    	<div>
+				<ul>
+					<li><a href="#" id="twitter">news</a></li>
+					<li><a href="#" id="facebook">gallery</a></li>
+					<li><a href="#" id="googleplus">contact</a></li>
+
+				</ul>
+	   </div>
+    </footer>
+    
 </body>
 </html>

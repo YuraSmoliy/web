@@ -1,0 +1,67 @@
+[
+{
+"name": "Xiaomi Mi4 2/16GB White",
+"cost": "3499",
+"picture":"mi4c_16.jpg",
+"text":"display (5', IPS, 1920x1080)/ Qualcomm Snapdragon 801 (2.5 )/ camera: 13 Mp, front: 8 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 4.4 (KitKat) / 3080 mA*h"
+},
+{
+"name": "Xiaomi Mi4c 16GB Black ",
+"cost": "4044",
+"picture":"mi4c_16gb_bk.jpg",
+"text":"display (5', IPS, 1920x1080)/ Qualcomm Snapdragon 808 (1.44 + 1.82 )/ camera: 13 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 5.1.1 (Lollipop) / 3080 mA*h"
+},
+{
+"name": "Xiaomi Redmi Note 2 16GB Gray",
+"cost": "3699",
+"picture":"redmi_note_2_grey.jpg",
+"text":"display (5', IPS, 1920x1080)/ MediaTek Helio X10 MT6795 (2.0)/ camera: 13 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 5.0 (Lollipop) / 3060 mA*h"
+
+},
+{
+"name": "Xiaomi Redmi 3 Gray",
+"cost": "3699",
+"picture":"redmi_3.jpg",
+"text":"display (5', IPS, 1280x720)/ Qualcomm Snapdragon 616 (1.5 + 1.2 )/ camera: 13 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 5.1.1 (Lollipop) / 4100 mA*h"
+},
+{
+"name": "Xiaomi Redmi Note 3 16GB Gray",
+"cost": "4088",
+"picture":"redmi_3_16gb.jpg",
+"text":"display (5.5', IPS, 1080x1920)/ MediaTek Helio X10 MT6795 (2.0)/ camera: 13 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 5.1.1 (Lollipop) / 4000 mA*h"
+},
+{
+"name": "Xiaomi Redmi 3 Pro 3/32GB Gold",
+"cost": "4088",
+"picture":"redmi_3_pro3_32_gd.jpg",
+"text":"display (5', IPS, 1280x720)/Qualcomm Snapdragon 616 (1.5 + 1.2 )/ camera: 13 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 5.1.1 (Lollipop) / 4100 mA*h"
+},
+{
+"name": "Xiaomi Redmi Note 3 Pro 16GB Silver",
+"cost": "4088",
+"picture":"redmi_3_pr_16gb_sl.jpg",
+"text":"display (5.5', IPS, 1080x1920)/Qualcomm Snapdragon 650 (1.8 + 1.4 )/ camera: 16 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 5.1.1 (Lollipop) / 4000 mA*h"
+},
+{
+"name": "Xiaomi Redmi 3s 16GB Gold",
+"cost": "3799",
+"picture":"redmi_3s_gd.jpg",
+"text":"display (5', IPS, 1280x720)/Qualcomm Snapdragon 430 (1.4 + 1.1 )/ camera: 13 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 6.0(Lollipop) / 4100 mA*h"
+},
+{
+"name": "Xiaomi Redmi Note 2 Prime 32GB White",
+"cost": "3999",
+"picture":"redmi_note_2_prime_white.jpg",
+"text":"display (5.5', IPS, 1920x1080)/MediaTek Helio X10 MT6795 (2.2 )/ camera: 13 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Micro-SIM/ Android 5.0(Lollipop) / 4100 mA*h"
+},
+{
+"name": "Xiaomi Mi5 Exclusive 128GB White",
+"cost": "13999",
+"picture":"mi5_exclusive.jpg",
+"text":"display (5.5', IPS, 1920x1080)/Qualcomm MSM8996 Snapdragon 820 (2.15)/ camera: 16 Mp, front: 5 Mp/ RAM 2 Gb/ 16 Gb memory/ 3G/ GPS/ Nano-SIM/ Android 5.0(Lollipop) / 3000 mA*h"
+}
+
+
+
+]
+

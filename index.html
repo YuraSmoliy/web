@@ -1,95 +1,92 @@
-<!doctype html>
-<!-- Website Template by freewebsitetemplates.com -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My first website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
-	<script type="text/javascript" src="js/mobile.js"></script>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="gallery.js" defer></script>
+	
 </head>
 <body>
-
-	<div id="header" >
-	
-		<a href="index.html" class="logo">
-			<img src="images/logo2.png" alt="">
-		</a>
-		<ul id="navigation">
-			<li class="selected">
-				<a href="index.html">головна сторінка</a>
-			</li>
-			
-			<li>
-				<a href="gallery.html">галерея</a>
-			</li>
-			
-			<li>
-				<a href="contact.html">контакти</a>
-			</li>
-		</ul>
+ 
+  <header>
+	<div class="logo">
+		<img src="xiaomi.png">
 	</div>
-	<div id="body">
-		<div id="featured">
-			<img src="images/main2.jpg" alt="">
-			<div>
-				<h2>Львів відкритий для світу</h2>
-				<span>Історія , фото міста </span>
-				<p style="color:white">На північ від східних Карпат, над річкою Полтвою — притокою Західного Бугу — лежить одне з найкрасивіших українських міст — старовинний Львів.
+	<div>
+		<ul class="navItem">
+			<li><a href="index.html">news</a></li>
+			<li><a href="gallery.html">gallery</a></li>
+			<li><a href="contact.html">contact</a></li>
+			<li id="logIn" onclick="logIn()">log in?</li>
+   		</ul>
+   		
+	</div>
+    <form id="logInForm">
+		   
+   			<input class="logInfild" type="text" placeholder="name">
+   			<input class="logInfild" type="password" placeholder="password">
+   			<button class="logInfild" >Log in</button>
+   	</form>
+  </header>
+  
+	<article>
+	     <h2>Витекли характеристики флагмана Xiaomi Redmi Note 4</h2>
+	     <div class="content">
+			<div class="widthContent" >
+				<img src="note4.jpg">
+			</div>
+			<div class="widthContent">
 
-Багата і славна історія цього міста. Воно засноване в середині XIII століття (перша письмова згадка про місто датована 1256 роком) галицько-волинським князем Данилом Галицьким і назване іменем його сина Льва (Лев Данилович). З фортецею на горі, місто служило опорним пунктом проти татаро-монгольської навали, що йшла з азіатських степів на Європу.</p>
-				
+			
+
+			<h4>Пристрій повинен отримати один із найпотужніших чипів на сучасному ринку.</h4>
+			<p>
+				Оприлюднені характеристики нового флагманського смартфона Xiaomi Redmi Note 4, презентація якого очікується наприкінці липня цього року. Судячи з опублікованої інформації, "китаєць" отримає один із найпотужніших сучасних чипів - MediaTek Helio X20.
+			</p>
+
+			<p>
+				Фото коробки смартфона опублікувало видання Gizmo China. На знімку видна практично вся інформація про пристрій.
+			</p>
+
+			<p>
+				Джерело запевняє, що гаджет вийде у двох версіях. При цьому і старша, і молодша будуть оснащені десятиядерним процесором.
+			</p>
+
+			<p>
+				Однак різнитися вони будуть за обсягом пам'яті. Так, молодша отримає 3 ГБ оперативної пам'яті і 64 вмонтованої, у той час як старша матиме 4 ГБ і 128 ГБ.
+			</p>
+
+			<p>
+				Також повідомляється про те, що розмір дисплея обох пристроїв становитиме 5,5 дюйма за розширення у 1920х1080 пікселів. Непоганими характеристиками будуть вирізнятися і камери пристрою - 13 Мп і 5 Мп. При цьому основна камера, згідно з даними витоків, буде подвійною.
+			</p>
+
+			<p>
+				Ємність батареї буде досить значною - 4000 мАг (мінімальна) і 4100 мАг (середня).
+			</p>
+
+			<p>
+				Пристрій також буде оснащений сканером відбитка пальців і двома слотами для SIM-карток (обидві з підтримкою LTE).
+			</p>
+
+			<p>
+				Раніше повідомлялося про те, що китайська компанія Meizu представить потужний флагман з камерою 20 Мп.
+			</p>
+
 			</div>
 		</div>
-		<ul>
-			<li>
-			<figure>
-				<a href="gallery.html">
-					<img src="images/kostel.jpg" alt="">
-					<figcaption>
-					<span><strong>Костел св.Єлизавети</strong></span>
-					</figcaption>
-				</a>
-			</figure>
-			</li>
-	
-			<li>
-			<figure>
-				<a href="gallery.html">
-					<img src="images/ratusha.jpg" alt="">
-					<figcaption><span><strong>ратуша</strong></span></figcaption>
-				</a>
-				</figure>
-			</li>
-			<li>
-			<figure>
-				<a href="gallery.html">
-					<img src="images/opernuy.jpg" alt="">
-				<figcaption><span><strong>оперний театр</strong></span></figcaption>
-				</a>
-				</figure>
-			</li>
-		</ul>
-	</div>
-	<div id="footer">
-		<div>
-			<p> 2016 by Yura. </p>
-			<ul>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
-				</li>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
-				</li>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
-				</li>
-				<li>
-					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+	</article>
+
+    <footer>
+    	<div>
+				<ul>
+					<li><a href="#" id="twitter">news</a></li>
+					<li><a href="#" id="facebook">gallery</a></li>
+					<li><a href="#" id="googleplus">contact</a></li>
+
+				</ul>
+	   </div>
+    </footer>
+    
 </body>
 </html>

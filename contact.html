@@ -1,92 +1,84 @@
-<!doctype html>
-<!-- Website Template by freewebsitetemplates.com -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My first website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
-	<script type="text/javascript" src="js/mobile.js"></script>
-</head>
-<body>
-
-	<div id="header">
-		<a href="index.html" class="logo">
-			<img src="images/logo2.png" alt="">
-		</a>
-		<ul id="navigation">
-			<li>
-				<a href="index.html">головна сторінка</a>
-			</li>
-			
-			<li>
-				<a href="gallery.html">галерея</a>
-			</li>
-			
-			<li class="selected">
-				<a href="contact.html">контакти</a>
-			</li>
-		</ul>
-	</div>
-	<div id="body">
-		
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<script src="contact.js" defer></script>
 	
-	<div id="login">
-		<h2><span class="fontawesome-lock"></span>Замовлення екскурсій</h2>
-		<form action="mySendMail.php" method="POST">
-			<fieldset>
-				<p><label for="email">ім'я</label></p>
-				<p><input type="text" id="name" name="name" value="ім'я" onBlur="if(this.value=='')this.value='ім'я" onFocus="if(this.value=='ім'я')this.value=''"></p>
-				
-				<p><label for="email">Email:</label></p>
-				<p><input type="email" name="email" id="email" value="email" onBlur="if(this.value=='')this.value='email'" onFocus="if(this.value=='email')this.value=''"></p>
-
-				<p><label for="age">вік</label></p>
-				<p><input type="number" id="number" name="age" value="16" onBlur="if(this.value=='')this.value='вік'" onFocus="if(this.value=='вік')this.value=''"></p> 
-				  
-	       		<p><label for="age">дата</label></p>
-				<p><input type="date" id="date" name="date" value="дата" onBlur="if(this.value=='')this.value='дата'" onFocus="if(this.value=='вік')this.value=''"></p> 
-		       
-			      <p><label for="type">тип екскурсії</label></p>
-				<p>	<select name="type" >
-				<option value="1">оглядова</option>
-				<option value="2">личаківське кладовище</option>
-				<option value="3">Високий Замок</option>
-				
-					</select>
-				</p>
-					
-
-			    <p><label for="msg">повідомлення</label></p>
-				<p>	<textarea name="msg"></textarea></p>
-				
-				
-				
-				<p><input type="submit" value="відправити"></p>
-			</fieldset>
-		</form>
+</head>
+<body onload="changeLetter()">
+ 
+  <header>
+	<div class="logo">
+		<img src="xiaomi.png">
 	</div>
+	<div>
+		<ul class="navItem">
+			<li><a href="index.html">news </a></li>
+			<li><a href="gallery.html">gallery </a></li>
+			<li><a href="contact.html">contact </a></li>
+			<li id="logIn" onclick="logIn()">log in?</li>
+   		</ul>
 	</div>
-	<iframe src="http://www.youtube.com/v/-qUsXadWPnE?version=3&feature=player_detailpage allowfullscreen=" > Ваш браузер не підтримує iframe</iframe>
-	<div id="footer">
-		<div>
-			<p>2016 by Yura.</p>
-			<ul>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/twitter/" id="twitter">twitter</a>
-				</li>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/facebook/" id="facebook">facebook</a>
-				</li>
-				<li>
-					<a href="http://freewebsitetemplates.com/go/googleplus/" id="googleplus">googleplus</a>
-				</li>
-				<li>
-					<a href="http://pinterest.com/fwtemplates/" id="pinterest">pinterest</a>
-				</li>
-			</ul>
+	<form id="logInForm">
+		   
+   			<input class="logInfild" type="text" placeholder="name">
+   			<input class="logInfild" type="password" placeholder="password">
+   			<button class="logInfild" >Log in</button>
+   	</form>
+  </header>
+  
+	<article>
+		<div id="menu">
+			<h1>Contact &#9993</h1>
+			<h1>You can chack your Letter &#9745</h1>
 		</div>
-	</div>
+		<section id="login">
+
+			<h2>Contact</h2>
+			<form action="#" method="POST" onsubmit="return validationSubmit()" autocomplete="on" name="contact">
+				<fieldset>
+					<p><label for="email">name</label></p>
+					<p><input type="text" id="name" name="name" value="name" required></p>
+
+					<p><label for="email">Email:</label></p>
+					<p><input type="email" name="email" id="email" value="email" required ></p>
+
+					<p><label for="age">age</label></p>
+					<p><input type="number" id="number" name="age" value="16" min="16" max="90" required ></p> 
+
+					<p><label for="msg">mail</label></p>
+					<p>	<textarea name="msg"></textarea></p>
+					<p><input type="submit" value="send"></p>
+				</fieldset>
+			</form>
+		</section>
+		 <section id="letter">
+			<h2>Letter</h2>
+			<div id="letterContent" >
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+
+		</section>
+
+	</article>
+
+    <footer>
+    	<div>
+				<ul>
+					<li><a href="#" id="twitter">news</a></li>
+					<li><a href="#" id="facebook">gallery</a></li>
+					<li><a href="#" id="googleplus">contact</a></li>
+
+				</ul>
+	   </div>
+    </footer>
+    
 </body>
 </html>
